@@ -62,6 +62,11 @@ public final class MainActivity extends AppCompatActivity implements View.OnClic
                                 toast("获取拍照权限成功");
                             }
                         }
+
+                        @Override
+                        public void onDenied(List<String> permissions, boolean never) {
+
+                        }
                     });
 
         } else if (viewId == R.id.btn_main_request_group) {
